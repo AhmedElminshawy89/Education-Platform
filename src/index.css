@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Jost", sans-serif;
+}
+
+nav{
+  z-index: 1000 !important;
+}
+
+.gradientBg{
+  background: linear-gradient(99deg,#EE9AE5 0%,#5961F9 100%);
+}
+
+.btn-primary{
+  @apply px-8 py-3 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300
+}
+
+
