@@ -19,6 +19,24 @@ const Tabs = () => {
                 <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
                     className={`text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal transition-all ${
+                    openTab === 0
+                        ? "text-white bg-primary transform -translate-y-2"
+                        : "text-white-600 bg-white transform translate-y-0"
+                    }`}
+                    onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(0);
+                    }}
+                    data-toggle="tab"
+                    href="#link1"
+                    role="tablist"
+                >
+                    <i className="fas fa-space-shuttle text-base mr-1"></i> All
+                </a>
+                </li>
+                <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <a
+                    className={`text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal transition-all ${
                     openTab === 1
                         ? "text-white bg-primary transform -translate-y-2"
                         : "text-white-600 bg-white transform translate-y-0"
@@ -107,6 +125,29 @@ const Tabs = () => {
                     <BoxCourses/>
                     <BoxCourses/>
                 </div>: <div className="md:w-100 mx-auto">
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
+                </div>}
+              </div>
+            </div>
+            <div className={`px-4 py-5 flex-auto transition-all delay-300 ${openTab === 0 ? "block" : "hidden"}`}>
+              <div className="tab-content tab-space">
+              {isGrid?<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 md:w-100 mx-auto">
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                    <BoxCourses/>
+                </div>: <div className="md:w-100 mx-auto">
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
+                    <GridBoxCourse/>
                     <GridBoxCourse/>
                     <GridBoxCourse/>
                     <GridBoxCourse/>
