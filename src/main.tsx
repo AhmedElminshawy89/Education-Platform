@@ -5,9 +5,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Education-Platform/">
     <ChakraProvider>
       <App />
     </ChakraProvider>
   </BrowserRouter>
-)
+);
