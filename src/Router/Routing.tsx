@@ -5,7 +5,6 @@ import Registration from "../Pages/Regestration"
 import Categories from "../Pages/Categories"
 import DetailsCourse from "../Pages/DetailsCourse"
 const Routing = () => {
-
   return (
     <>
       <Routes>
@@ -19,5 +18,4 @@ const Routing = () => {
     </>
   )
 }
-
 export default Routing
