@@ -6,7 +6,7 @@
 
 body{
   font-family: "Jost", sans-serif;
-    background-color: #ffff;
+    background-color: #ffff !important;
 }
 
 nav{
