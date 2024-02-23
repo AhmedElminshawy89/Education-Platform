@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
 import logo from '../assets/Images/logo.png'
 import { GrLanguage } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
@@ -7,11 +7,13 @@ import { useEffect, useRef, useState } from "react";
 import { INavItem } from "../Interface";
 import {Link} from 'react-scroll'
 import { NavLink, useLocation } from "react-router-dom";
+// import {SunIcon, MoonIcon } from "@chakra-ui/icons";
+
 const Navbar = () => {
 
     const location = useLocation()
     const isHomePage = location.pathname === '/';
-
+    // const { colorMode, toggleColorMode } = useColorMode();
     const [openMenu,setOpenMenu] = useState<boolean>(false);
     const menuRef  = useRef<HTMLUListElement>(null);
 
@@ -54,6 +56,15 @@ const Navbar = () => {
                     ))}
                 </ul>
                 )}
+                {/* <Button
+              onClick={toggleColorMode}
+              _hover={{ bg: "transparent" }}
+              outline={"none"}
+              backgroundColor={"transparent"}
+              display={{ base: "none", md: "flex" }}
+            >
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button> */}
             </div>
             <div className="space-x-8 hidden md:flex items-center">
                 <a className="hidden lg:flex items-center" href="/">
