@@ -8,6 +8,7 @@ const GridBoxCourse = () => {
   overflow='hidden'
   variant='outline'
   mb={'15px'}
+  bg={'white'}
 >
   <Image
     objectFit='cover'

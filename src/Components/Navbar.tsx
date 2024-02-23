@@ -1,4 +1,4 @@
-import { Button, Image } from "@chakra-ui/react";
+import {  Image } from "@chakra-ui/react";
 import logo from '../assets/Images/logo.png'
 import { GrLanguage } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const BoxCourses = () => {
   return (
-<Card maxW='sm'>
+<Card maxW='sm' bg={'white'}>
   <CardBody p={2}>
     <Image
       src={primary}
