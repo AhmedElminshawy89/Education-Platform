@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"/Education-Platform/"
+  base:"/Education-Platform/",
+  build: {
+    chunkSizeWarningLimit: 2000, 
+  },
 })
