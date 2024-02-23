@@ -9,7 +9,7 @@ const GridBoxCourse = () => {
   variant='outline'
   mb={'15px'}
   bg={'white'}
-  color={'#010851'}
+  color={'#010851' }
 >
   <Image
     objectFit='cover'
