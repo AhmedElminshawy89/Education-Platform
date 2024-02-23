@@ -9,7 +9,7 @@ const GridBoxCourse = () => {
   variant='outline'
   mb={'15px'}
   bg={'white'}
-  color={'#010851' }
+  color={'#000'}
 >
   <Image
     objectFit='cover'
@@ -20,9 +20,9 @@ const GridBoxCourse = () => {
 
   <Stack>
     <CardBody>
-      <Heading size='md'>The perfect course</Heading>
+      <Heading size='md' color={'#000'}>The perfect course</Heading>
 
-      <Text p={2}>
+      <Text p={2} color={'#000'}>
         This course is perfect for modern tropical spaces, baroque inspired
         spaces, earthy toned spaces and for people who love a chic design with a
         sprinkle of vintage design.

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const BoxCourses = () => {
   return (
-<Card maxW='sm' bg={'white'} color={'#010851'}>
+<Card maxW='sm' bg={'white'} color={'#000'}>
   <CardBody p={2}>
     <Image
       src={primary}
@@ -12,8 +12,8 @@ const BoxCourses = () => {
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>The perfect Course</Heading>
-      <Text>
+      <Heading color={'#000'} size='md'>The perfect Course</Heading>
+      <Text color={'#000'}>
         This course is perfect for modern tropical spaces, baroque inspired
         spaces, earthy toned spaces and for people who love a chic design with a
         sprinkle of vintage design.
