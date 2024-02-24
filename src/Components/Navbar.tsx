@@ -45,17 +45,19 @@ const Navbar = () => {
     <nav className="bg-white md:px-14 p-4 border-b  max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0">
         <div className="text-lg container mx-auto flex justify-between items-center font-medium">
             <div className="flex items-center space-x-8">
+
                 <NavLink to="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary uppercase">
                     <Image src={logo} className="w-10 inline-block items-center"/>
                     <span>edp</span>
                 </NavLink>
                 {isHomePage&&(
-                <ul className="md:flex space-x-8 hidden">
+                  <ul className="md:flex space-x-8 hidden">
                     {navItems.map(({link,path})=>(
-                        <Link activeClass="active" spy={true} smooth={true} offset={-100} key={link} to={path} className="block hover:text-gray-300 cursor-pointer">{link}</Link>
-                    ))}
+                      <Link activeClass="active" spy={true} smooth={true} offset={-100} key={link} to={path} className="block hover:text-gray-300 cursor-pointer">{link}</Link>
+                      ))}
                 </ul>
                 )}
+              <NavLink to={'/dashboard/home'} >Dashboard</NavLink>
                 {/* <Button
               onClick={toggleColorMode}
               _hover={{ bg: "transparent" }}
