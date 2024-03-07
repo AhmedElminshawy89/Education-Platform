@@ -11,6 +11,7 @@ import Courses from "../Pages/Dashboard/Courses"
 import Category from "../Pages/Dashboard/Category"
 import Students from "../Pages/Dashboard/Students"
 import Setting from "../Pages/Dashboard/Setting"
+import AddCourse from "../Pages/Dashboard/AddCourse"
 const Routing = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Routing = () => {
         <Route path="/dashboard" element={<DashboardLayout/>}>
             <Route path="home" element={<Dashboard/>}/>
             <Route path="courses" element={<Courses/>}/>
+            <Route path="addcourse" element={<AddCourse/>}/>
             <Route path="category" element={<Category/>}/>
             <Route path="student" element={<Students/>}/>
             <Route path="actions" element={<Actions/>}/>

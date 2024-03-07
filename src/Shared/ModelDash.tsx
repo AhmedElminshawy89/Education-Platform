@@ -14,15 +14,16 @@ interface IModelDash{
     size?:string
     title:string;
     children:ReactNode;
+    ButtonName:string
 }
-const ModelDash = ({size,title,children}:IModelDash) => {
+const ModelDash = ({size,title,children,ButtonName}:IModelDash) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
   return (
     <>
-      <Button onClick={onOpen} bg={'#000'} color={'white'} _hover={{bg:'#272626'}}>Open Modal</Button>
+      <Button onClick={onOpen} bg={'#000'} color={'white'} _hover={{bg:'#272626'}}>{ButtonName}</Button>
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}

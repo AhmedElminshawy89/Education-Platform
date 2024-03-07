@@ -21,6 +21,8 @@ import ModelDash from "../../Shared/ModelDash";
 import { CgClose } from "react-icons/cg";
 import { ChangeEvent, useState } from "react";
 import { FiUploadCloud } from "react-icons/fi";
+import { BiEdit, BiShowAlt } from "react-icons/bi";
+import { MdOutlineDelete } from "react-icons/md";
 const Category = () => {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const onChangeHandlerImg = (e: ChangeEvent<HTMLInputElement>) => {
@@ -33,7 +35,7 @@ const Category = () => {
   return (
     <Box>
       <Box className="flex justify-end">
-        <ModelDash  title="Create A Category">
+        <ModelDash ButtonName="Add Category" title="Create A Category">
           <>
             <FormControl mb={4}>
               <FormLabel>Category name</FormLabel>
@@ -104,6 +106,7 @@ const Category = () => {
               <Th>Category Name</Th>
               <Th>Describtion</Th>
               <Th>Image</Th>
+              <Th>Actions</Th>
             </Tr>
           </Thead>
           <Tbody>
@@ -114,21 +117,12 @@ const Category = () => {
               <Td>
                 <Avatar src={img} />
               </Td>
-            </Tr>
-            <Tr>
-              <Td>1</Td>
-              <Td>Primary</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
               <Td>
-                <Avatar src={img} />
-              </Td>
-            </Tr>
-            <Tr>
-              <Td>1</Td>
-              <Td>Primary</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>
-                <Avatar src={img} />
+                <Box className="flex gap-2">
+                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
+                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
+                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
+                </Box>
               </Td>
             </Tr>
           </Tbody>
@@ -138,6 +132,7 @@ const Category = () => {
               <Th>Category Name</Th>
               <Th>Describtion</Th>
               <Th>Image</Th>
+              <Th>Actions</Th>
             </Tr>
           </Tfoot>
         </Table>

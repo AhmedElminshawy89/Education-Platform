@@ -16,7 +16,7 @@ import img from "../../assets/Images/Preparatory-stage.jpg";
 import { MdOutlineDelete } from "react-icons/md";
 import { BiEdit, BiShowAlt } from "react-icons/bi";
 
-const Courses = () => {
+const Admins = () => {
   return (
     <Box>
       <TableContainer
@@ -25,31 +25,33 @@ const Courses = () => {
         p={2}
         color={"#000"}
         fontSize={"18px"}
-        my={12}
       >
         <Table variant="simple">
-          <TableCaption>Courses</TableCaption>
+          <TableCaption>Admins</TableCaption>
           <Thead>
             <Tr>
               <Th>ID</Th>
-              <Th>Course Name</Th>
-              <Th>Describtion</Th>
-              <Th>Category Name</Th>
-              <Th>Video Count</Th>
-              <Th>Image</Th>
+              <Th>First Name</Th>
+              <Th>Last Name</Th>
+              <Th>Email</Th>
+              <Th>Images</Th>
+              <Th>Phone</Th>
+              <Th>Age</Th>
               <Th>Actions</Th>
             </Tr>
           </Thead>
           <Tbody>
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -60,13 +62,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -77,13 +81,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -94,13 +100,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -111,13 +119,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -128,13 +138,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -145,13 +157,15 @@ const Courses = () => {
             </Tr>{" "}
             <Tr>
               <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
+              <Td>Ahmed</Td>
+              <Td>Elsaied</Td>
+              <Td>ahmed@gmail.com</Td>
               <Td>
                 <Avatar src={img} />
               </Td>
+              <Td>01286552467</Td>
+              <Td>24</Td>
+
               <Td>
                 <Box className="flex gap-2">
                   <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
@@ -160,91 +174,6 @@ const Courses = () => {
                 </Box>
               </Td>
             </Tr>{" "}
-            <Tr>
-              <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
-              <Td>
-                <Avatar src={img} />
-              </Td>
-              <Td>
-                <Box className="flex gap-2">
-                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
-                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
-                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
-                </Box>
-              </Td>
-            </Tr>{" "}
-            <Tr>
-              <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
-              <Td>
-                <Avatar src={img} />
-              </Td>
-              <Td>
-                <Box className="flex gap-2">
-                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
-                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
-                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
-                </Box>
-              </Td>
-            </Tr>{" "}
-            <Tr>
-              <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
-              <Td>
-                <Avatar src={img} />
-              </Td>
-              <Td>
-                <Box className="flex gap-2">
-                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
-                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
-                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
-                </Box>
-              </Td>
-            </Tr>{" "}
-            <Tr>
-              <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
-              <Td>
-                <Avatar src={img} />
-              </Td>
-              <Td>
-                <Box className="flex gap-2">
-                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
-                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
-                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
-                </Box>
-              </Td>
-            </Tr>{" "}
-            <Tr>
-              <Td>1</Td>
-              <Td>New Course</Td>
-              <Td>Lorem ipsum dolor sit amet ...</Td>
-              <Td>Primary</Td>
-              <Td>5</Td>
-              <Td>
-                <Avatar src={img} />
-              </Td>
-              <Td>
-                <Box className="flex gap-2">
-                  <BiShowAlt className=" cursor-pointer text-2xl text-primary" />
-                  <BiEdit className=" cursor-pointer text-2xl text-green-500" />
-                  <MdOutlineDelete className=" cursor-pointer text-2xl text-red-500" />
-                </Box>
-              </Td>
-            </Tr>
           </Tbody>
           <Tfoot>
             <Tr>
@@ -263,4 +192,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Admins;
