@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <Box>
       <Box className="flex items-center justify-between flex-wrap gap-8">
-        <Box className="bg-white flex-1 p-4 rounded-xl">
+        <Box className="bg-white flex-1 p-4 rounded-xl shadow-xl">
           <Flex alignItems={"center"} gap={8} justifyContent={'space-between'}>
             <Box>
               <Text className=" text-[#67748e] text-2xl font-semibold">
@@ -35,7 +35,7 @@ const Dashboard = () => {
             </Box>
           </Flex>
         </Box>
-        <Box className="bg-white flex-1 p-4 rounded-xl">
+        <Box className="bg-white flex-1 p-4 rounded-xl shadow-xl">
           <Flex alignItems={"center"} gap={8} justifyContent={'space-between'}>
             <Box>
               <Text className=" text-[#67748e] text-2xl font-semibold">
@@ -48,7 +48,7 @@ const Dashboard = () => {
             </Box>
           </Flex>
         </Box>
-        <Box className="bg-white flex-1 p-4 rounded-xl">
+        <Box className="bg-white flex-1 p-4 rounded-xl shadow-xl">
           <Flex alignItems={"center"} gap={8} justifyContent={'space-between'}>
             <Box>
               <Text className=" text-[#67748e] text-2xl font-semibold">
@@ -61,7 +61,7 @@ const Dashboard = () => {
             </Box>
           </Flex>
         </Box>
-        <Box className="bg-white flex-1 p-4 rounded-xl">
+        <Box className="bg-white flex-1 p-4 rounded-xl shadow-xl">
           <Flex alignItems={"center"} gap={8} justifyContent={'space-between'}>
             <Box>
               <Text className=" text-[#67748e] text-2xl font-semibold">
