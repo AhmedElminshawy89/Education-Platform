@@ -7,9 +7,7 @@ import {
   Box,
   FormControl,
   FormLabel,
-  Textarea,
   Input,
-  Select,
   useColorModeValue,
 } from "@chakra-ui/react";
 const AddAdmin = () => {

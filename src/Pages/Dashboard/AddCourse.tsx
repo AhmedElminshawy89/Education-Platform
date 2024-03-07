@@ -11,7 +11,6 @@ import {
   Input,
   Select,
   useColorModeValue,
-  Button,
 } from "@chakra-ui/react";
 const AddCourse = () => {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
