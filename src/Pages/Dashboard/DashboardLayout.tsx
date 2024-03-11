@@ -137,7 +137,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
               : "text-black  hover:text-black hover:shadow-xl"
           }`}
           padding={"9px 10px"}
-          margin={"15px"}
+          margin={"10px"}
         >
           {link.name}
         </NavItem>
