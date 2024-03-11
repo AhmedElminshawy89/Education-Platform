@@ -32,10 +32,18 @@ const AddCourse = () => {
           </FormControl>
           <FormControl mb={4}>
             <FormLabel>Category</FormLabel>
-            <Select placeholder="Select description" border={"1px solid"}>
+            <Select placeholder="Select Category" border={"1px solid"}>
               <option value="option1">Primary</option>
               <option value="option2">Preparage</option>
               <option value="option3">High</option>
+            </Select>
+          </FormControl>
+          <FormControl mb={4}>
+            <FormLabel>Subcategory</FormLabel>
+            <Select placeholder="Select Category" border={"1px solid"}>
+              <option value="option1">Data Structure</option>
+              <option value="option2">Algorithms</option>
+              <option value="option3">C++</option>
             </Select>
           </FormControl>
         </Box>
@@ -87,7 +95,7 @@ const AddCourse = () => {
         </div>
         <FormLabel>Image</FormLabel>
         <div
-          className="w-[100%] bg-transparent text-center  rounded-lg 
+          className="w-[100%] h-[100%] bg-transparent text-center  rounded-lg 
         flex flex-col justify-center items-center border-2 border-dotted border-primary"
         >
           {selectedImage ? (
@@ -111,7 +119,7 @@ const AddCourse = () => {
                   height="423%"
                   opacity={0}
                   type="file"
-                  className="v"
+                  // className="v"
                   placeholder="photo"
                   name="identifier"
                   onChange={onChangeHandlerImg}

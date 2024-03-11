@@ -34,7 +34,7 @@ import logo from "../../assets/Images/logo.png";
 import img from "../../assets/Images/me.jpg";
 import { motion } from "framer-motion";
 import { BiBookAdd, BiCategory } from "react-icons/bi";
-import { TbActivityHeartbeat } from "react-icons/tb";
+import { TbActivityHeartbeat, TbSubtask } from "react-icons/tb";
 import { SiCoursera, SiHomebridge } from "react-icons/si";
 import { PiStudent } from "react-icons/pi";
 
@@ -71,6 +71,7 @@ const LinkItems: Array<LinkItemProps> = [
     icon: BiBookAdd,
   },
   { name: "Category", to: "category", icon: BiCategory },
+  { name: "Subcategory", to: "Subcategory", icon: TbSubtask  },
   { name: "Students", to: "student", icon: PiStudent },
   { name: "Actions", to: "actions", icon: TbActivityHeartbeat },
   { name: "Setting", to: "Setting", icon: FiSettings },

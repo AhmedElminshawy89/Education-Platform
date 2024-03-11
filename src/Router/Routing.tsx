@@ -12,6 +12,7 @@ import Category from "../Pages/Dashboard/Category"
 import Students from "../Pages/Dashboard/Students"
 import Setting from "../Pages/Dashboard/Setting"
 import AddCourse from "../Pages/Dashboard/AddCourse"
+import Subcategory from "../Pages/Dashboard/Subcategory"
 const Routing = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const Routing = () => {
             <Route path="courses" element={<Courses/>}/>
             <Route path="addcourse" element={<AddCourse/>}/>
             <Route path="category" element={<Category/>}/>
+            <Route path="Subcategory" element={<Subcategory/>}/>
             <Route path="student" element={<Students/>}/>
             <Route path="actions" element={<Actions/>}/>
             <Route path="setting" element={<Setting/>}/>
